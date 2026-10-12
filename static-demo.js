@@ -176,4 +176,9 @@
   }
 
   document.querySelectorAll("[data-static-table]").forEach(initTable);
+
+  // Guided tour (tour.js): spotlight, arrows and tooltips.
+  var tour = document.createElement("script");
+  tour.src = ROOT + "static-tour.js";
+  document.head.appendChild(tour);
 })();
